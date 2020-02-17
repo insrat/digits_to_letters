@@ -44,6 +44,8 @@ if __name__ == '__main__':
     try:
         input_data = input('Input (Separated by commas): ')
         digits_list = [int(val) for val in input_data.split(',')]
+        # Note: multi bit conversion is supported, such as [68], 
+        # which is consistent with the conversion result of [6,8]
         digits_list = divided_digits(digits_list)
     except Exception as err:
         print ('Input data error:', err)
